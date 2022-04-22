@@ -12,21 +12,22 @@
         margin: 4rem 1.5rem 0rem 0;
         border-radius: 0 2rem 2rem 0;
         background-image: url('../../assets/images/images/pattern-background.svg');
+        background-color: $secondary__color--bkgd-clearCards;
         // background-repeat: no-repeat;
         // background-size: 20rem 20rem;
 
         // indented style
-        // -webkit-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
-	    // -moz-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
-	    // box-shadow: inset 0px 13px 5.5px -5px rgb(0, 0, 0, 0.25), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.5);
-        // border-top: 1px solid rgba(172, 170, 170, 0.75);
-        // border-right: 1px solid rgb(194, 192, 192, 0.35);
-        // border-bottom: 1px solid rgb(194, 192, 192, 0.35);
+        -webkit-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
+	    -moz-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
+	    box-shadow: inset 0px 13px 5.5px -5px rgb(0, 0, 0, 0.25), inset -15px -15px 5.5px -5px rgba(255, 255, 255, 0.75);
+        border-top: 1px solid rgba(172, 170, 170, 0.75);
+        border-right: 1px solid rgb(247, 247, 247);
+        border-bottom: 1px solid rgb(247, 247, 247);
         // indented style
 
         
         // under shadow style
-        box-shadow: 2.5px 2.5px 3.5px 1px rgb(121, 120, 120), -10px 2.5px 3.5px 1px rgb(121, 120, 120);
+        // box-shadow: 2.5px 2.5px 3.5px 1px rgb(121, 120, 120), -10px 2.5px 3.5px 1px rgb(121, 120, 120);
         // under shadow style
     }
 
@@ -71,6 +72,7 @@
         @include display-flex(row, space-around, center);
         padding: 0.5rem 0 0.35rem 0;
         border: solid 2px $secondary__color--icon-frame;
+        background-color: rgba(255, 255, 255, 0.75);
         border-radius: 4px;
         margin-left: 10%;
         margin-right: 10%;
@@ -101,13 +103,14 @@
 
     &-about {
         background-color: $primary__color--text;
-        padding: 3rem 1rem;
+        padding: 3rem 1rem 2rem 1rem;
 
 
         &__intro {
             @include body__mobile;
             color: $primary__color--second-text;
             margin-bottom: 3rem;
+            padding: 0 1rem;
         }
 
         &__text-single {
@@ -117,11 +120,61 @@
         &__cards {
             padding: 0 1rem;
             @include display-flex(row, center, none);
-            gap: 4rem;
+            gap: 10%;
             flex-wrap: wrap;
         }
 
     }
 
+    &-projects {
+        padding: 3rem 0rem;
 
+        &__cards {
+            // padding: 0 1rem;
+            @include display-flex(row, center, none);
+            gap: 10%;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &-contact {
+        background-color: $primary__color--text;
+        padding: 3rem 1rem 3rem 1rem;
+
+
+        &__content {
+        @include body__mobile;
+        color: $primary__color--second-text;
+        margin-bottom: 2rem;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        background-image: url('../../assets/images/images/pattern-background.svg');
+        border-radius: .625rem;
+
+        // indented style
+        -webkit-box-shadow: inset 15px 15px 5.5px -5px rgb(0, 0, 0, 0.35), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.1);
+	    -moz-box-shadow: inset 15px 15px 5.5px -5px rgb(0, 0, 0, 0.35), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.1);
+	    box-shadow: inset 15px 15px 5.5px -5px rgb(0, 0, 0, 0.35), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.1);
+        border-top: 1px solid rgba(172, 170, 170, 0.05);
+        border-right: 1px solid rgb(194, 192, 192, 0.15);
+        border-bottom: 1px solid rgb(194, 192, 192, 0.15);
+        border-left: 1px solid rgb(194, 192, 192, 0.05);
+        // indented style
+
+        
+        // under shadow style
+        // box-shadow: 2.5px 2.5px 3.5px 1px rgb(0, 0, 0, 0.75);
+        // under shadow style
+        }
+        
+    }
+
+
+}
+
+.footer {
+    background-color: $primary__color--text;
+    @include labels-buttons__mobile;
+    color: $primary__color--second-text;
 }

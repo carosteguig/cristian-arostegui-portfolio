@@ -87,7 +87,7 @@ export default function HomePage() {
                         skills={webDevSkills}
                         />
                     </div>
-                    <p className='main-about__link'>projects</p> 
+                    {/* <p className='main-about__link'>projects</p>  */}
                 </section>
                 <section className='main-projects'>
                     <h2 className='main-projects__title main-titles'>// projects</h2>

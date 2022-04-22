@@ -23,6 +23,13 @@
     letter-spacing: 0.005px;
 }
 
+@mixin project-header__mobile {
+    font-family: 'Impact';
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.5rem;  
+}
+
 @mixin body__mobile {
     font-family: 'Noto Sans';
     font-size: 0.875rem;
