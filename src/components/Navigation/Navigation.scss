@@ -11,7 +11,23 @@
 
         &-link {
             margin-left: 1rem;
+            @include labels-buttons__mobile;
+            color: $primary__color--cta-active;
+
+            &:hover {
+                color: $secondary__color--cta-hover;
+                opacity: 0.8;
+                text-decoration: underline;
+
+            }
+
+            &--active {
+                font-weight: 500;
+                // text-decoration: underline;
+            }
         }
+
+
     }
 
 }

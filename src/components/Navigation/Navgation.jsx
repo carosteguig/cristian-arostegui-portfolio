@@ -11,10 +11,10 @@ export default function Navigation() {
                 <img className='nav__logo' src={Logo} alt='Cristian Arostegui logo' />
             </NavLink>
             <div className='nav__list'>
-                <NavLink className='nav__list-link' to='/' >
+                <NavLink className='nav__list-link' to='/' activeClassName='nav__list-link--active'>
                     <p className='nav__list-text'>Home</p>
                 </NavLink>
-                <NavLink className='nav__list-link' to='/'> {/*links to projects in the same page */}
+                <NavLink className='nav__list-link' to='' activeClassName='nav__list-link--active'> {/*links to projects in the same page */}
                     <p className='nav__list-text'>Projects</p>
                 </NavLink>
             </div>

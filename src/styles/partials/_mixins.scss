@@ -2,38 +2,38 @@
 
 // mobile
 @mixin page-header__mobile {
-    font-family: "Fira Sans";
-    font-size: 2.625rem;
-    font-weight: 500;
-    line-height: 3rem;
+    font-family: "Impact";
+    font-size: 3.25rem;
+    font-weight: normal;
+    line-height: 3.5rem;
 }
 
 @mixin section-header__mobile {
-    font-family: "Fira Sans";
+    font-family: 'Noto Sans';
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 2.25rem;  
 }
 
 @mixin subheader__mobile {
-    font-family: "Fira Sans";
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 1.5rem;  
+    letter-spacing: 0.005px;
 }
 
 @mixin body__mobile {
-    font-family: "Fira Sans";
+    font-family: 'Noto Sans';
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 1.5rem;  
 }
 
 @mixin labels-buttons__mobile {
-    font-family: "Fira Sans";
-    // font-size: .75rem;
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-family: 'Noto Sans';
+    font-size: 0.925rem;
+    font-weight: normal;
     line-height: 1.125rem; 
 }
 

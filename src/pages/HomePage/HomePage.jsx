@@ -6,6 +6,7 @@ import LinkedinIcon from '../../assets/images/icons/linkedin-icon.svg';
 import EmailIcon from '../../assets/images/icons/email-icon.svg';
 import DesignerIcon from '../../assets/images/icons/designer-icon.svg';
 import WebDevIcon from '../../assets/images/icons/webDev-icon.svg';
+// import Pattern from '../../assets/images/images/pattern-background.svg';
 import SkillCard from '../../components/SkillCard/SkillCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
@@ -36,26 +37,25 @@ export default function HomePage() {
     ]
 
     return (
-        <div>
-            <header>
-                <div>
-                    <div>
-                        <img src={LegoFace} alt="Cristian Arostegui's face, or not?" />
-                    </div>
-                    <div>
-                        <h1>Cristian Arostegui G.</h1>
-                        <p>UX designer / Web developer based in Victoria, BC, Canada</p>
+        <div className='wrapper'>
+            <header className='header'>
+                <div className='header__content'>
+                    {/* <img className='header__background' src={Pattern} alt='background pattern design' /> */}
+                    <img className='header__img' src={LegoFace} alt="Cristian Arostegui's face, or not?" />
+                    <div className='header__info'>
+                        <h1 className='header__info-title'>Cristian Arostegui G.</h1>
+                        <p className='header__info-text'>UX designer / Web developer based in Victoria, BC, Canada</p>
                     </div>
                 </div>
-                <div>
-                    <Link to='https://github.com/carosteguig'>
-                        <img src="" alt="Github button link" />
+                <div className='header__icons'>
+                    <Link className='header__icons-link' to={{ pathname:'https://github.com/carosteguig'}} target="_blank">
+                        <img className='header__icons-img' src={GithubIcon} alt="Github button link" />
                     </Link>
-                    <Link to='https://www.linkedin.com/in/cristianarosteguig/'>
-                        <img src='' alt='linkedin button link' />
+                    <Link className='header__icons-link' to={{ pathname: 'mailto:carosteguig@gmail.com'}} target="_blank"> {/*Need to sort the mailto link problem*/}
+                        <img className='header__icons-img' src={EmailIcon} /> 
                     </Link>
-                    <Link to='mailto:carosteguig@gmail.com'>
-                        <img src='' alt='email button link' />
+                    <Link className='header__icons-link' to={{ pathname: 'https://www.linkedin.com/in/cristianarosteguig/'}} target="_blank">
+                        <img className='header__icons-img' src={LinkedinIcon} alt='linkedin button link' />
                     </Link>
                 </div>
             </header>
