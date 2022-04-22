@@ -60,16 +60,16 @@ export default function HomePage() {
                 </div>
             </header>
 
-            <main>
-                <section>
-                    <div>
-                        <h2>// about</h2>
-                        <p>Furniture designer turned UX designer and Web developer.</p>
-                        <p>For the last 3 years I have been learning about UX and UI design and my goal is to combine these skills with web development.
-                            I really believe that by combining dev and designs skills, I can design and develop better products. Just like in furniture,
-                            by learning how to fabricate and build furniture, I gained a whole new perspective on how to design furniture.<span>Learn more...</span></p>
+            <main className='main'>
+                <section className='main-about'>
+                    <div className='main-about__intro'>
+                        <h2 className='main-about__title main-titles'>// about</h2>
+                        <p className='main-about__text'><span className='main-about__text-single'>Furniture designer turned UX designer and Web developer.</span>
+                        For the last 3 years I have been learning about UX and UI design and my goal is to combine these skills with web development.
+                        I really believe that by combining dev and designs skills, I can design and develop better products. Just like in furniture,
+                        by learning how to fabricate and build furniture, I gained a whole new perspective on how to design furniture.<span className='main-about__text-link'>Learn more...</span></p>
                     </div>
-                    <div>
+                    <div className='main-about__cards'>
                         <SkillCard
                         image= {DesignerIcon}
                         altText='pen drawing'
@@ -87,11 +87,11 @@ export default function HomePage() {
                         skills={webDevSkills}
                         />
                     </div>
-                    <p>projects</p> 
+                    <p className='main-about__link'>projects</p> 
                 </section>
-                <section>
-                    <h2>// projects</h2>
-                    <div>
+                <section className='main-projects'>
+                    <h2 className='main-projects__title main-titles'>// projects</h2>
+                    <div className='main-projects__cards'>
                         <ProjectCard  
                         name='Simple Meal'
                         description='A recipe web app that allows users to create their own meal plans. Users can choose between 1 to 5 different ingredients and they get up to 10 recipes based on those ingredients.'
@@ -104,20 +104,18 @@ export default function HomePage() {
                         />
                     </div>
                 </section>
-                <section>
-                    <h2>// contact me</h2>
-                    <div>
-                        <p>Please don’t be rude and say hi, I spent some time designing and coding this portfolio. Let me know how I did!
+                <section className='main-contact'>
+                    <h2 className='main-contact__title main-titles'>// contact me</h2>
+                    <div className='main-contact__content'>
+                        <p className='main-contact__text'>Please don’t be rude and say hi, I spent some time designing and coding this portfolio. Let me know how I did!
                         you can find me on any of these links.
                         Thanks for looking!
                         </p>
                     </div>
                 </section>
             </main>
-            <footer>
-                <p>
-                    Designed and developed by Cristian Arostegui G // 2022
-                </p>
+            <footer className='footer'>
+                <p className='footer__content'>Designed and developed by Cristian Arostegui G // 2022</p>
             </footer>
 
         </div>

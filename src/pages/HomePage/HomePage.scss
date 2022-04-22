@@ -9,17 +9,25 @@
     &__content {
         @include display-flex(column, none, center);
         height: 30rem;
-        margin: 2rem 1rem 1rem 0;
+        margin: 4rem 1.5rem 0rem 0;
         border-radius: 0 2rem 2rem 0;
         background-image: url('../../assets/images/images/pattern-background.svg');
         // background-repeat: no-repeat;
         // background-size: 20rem 20rem;
-        -webkit-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
-	    -moz-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
-	    box-shadow: inset 0px 13px 5.5px -5px rgb(0, 0, 0, 0.25), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.5);
-        border-top: 1px solid rgb(0, 0, 0, 0.1);
-        border-right: 1px solid rgb(0, 0, 0, 0.1);
-        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+        // indented style
+        // -webkit-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
+	    // -moz-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
+	    // box-shadow: inset 0px 13px 5.5px -5px rgb(0, 0, 0, 0.25), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.5);
+        // border-top: 1px solid rgba(172, 170, 170, 0.75);
+        // border-right: 1px solid rgb(194, 192, 192, 0.35);
+        // border-bottom: 1px solid rgb(194, 192, 192, 0.35);
+        // indented style
+
+        
+        // under shadow style
+        box-shadow: 2.5px 2.5px 3.5px 1px rgb(121, 120, 120), -10px 2.5px 3.5px 1px rgb(121, 120, 120);
+        // under shadow style
     }
 
     // &__background {
@@ -35,7 +43,7 @@
 
     &__img {
         width: 15.5rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         // padding-left: 8%
         // margin-left: 10%;
         // margin-right: 10%;
