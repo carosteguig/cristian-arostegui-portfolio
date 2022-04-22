@@ -2,7 +2,7 @@
 @import '../../styles/partials/mixins';
 
 .header {
-    height: 100vh;
+    height: 85vh;
     // padding: 2rem 1rem;
     // @include display-flex(none, flex-start, none);
 
@@ -84,6 +84,43 @@
         &-img {
             width: 2rem;
         }
+    }
+}
+
+.main {
+    // background-color: $primary__color--text;
+    // padding: 2rem 0;
+
+
+    &-titles {
+        text-align: center;
+        color: $primary__color--cta-active;
+        @include section-header__mobile;
+        margin-bottom: 1.75rem;
+    }
+
+    &-about {
+        background-color: $primary__color--text;
+        padding: 3rem 1rem;
+
+
+        &__intro {
+            @include body__mobile;
+            color: $primary__color--second-text;
+            margin-bottom: 3rem;
+        }
+
+        &__text-single {
+            margin-bottom: 1rem;
+        }
+
+        &__cards {
+            padding: 0 1rem;
+            @include display-flex(row, center, none);
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
     }
 
 

@@ -64,8 +64,8 @@ export default function HomePage() {
                 <section className='main-about'>
                     <div className='main-about__intro'>
                         <h2 className='main-about__title main-titles'>// about</h2>
-                        <p className='main-about__text'><span className='main-about__text-single'>Furniture designer turned UX designer and Web developer.</span>
-                        For the last 3 years I have been learning about UX and UI design and my goal is to combine these skills with web development.
+                        <p className='main-about__text-single'>Furniture designer turned UX designer and Web developer.</p>
+                        <p>For the last 3 years I have been learning about UX and UI design and my goal is to combine these skills with web development.
                         I really believe that by combining dev and designs skills, I can design and develop better products. Just like in furniture,
                         by learning how to fabricate and build furniture, I gained a whole new perspective on how to design furniture.<span className='main-about__text-link'>Learn more...</span></p>
                     </div>
@@ -83,7 +83,7 @@ export default function HomePage() {
                         altText='code icon'
                         title='Web Developer'
                         description='You know the feeling when a line of code works!  Looking forward to getting many more of those. Excited to what comes later'
-                        skillsTile='Skills'
+                        skillsTitle='Skills'
                         skills={webDevSkills}
                         />
                     </div>

@@ -3,7 +3,7 @@ import './ProjectCard.scss';
 export default function ProjectCard(props) {
 
     return (
-        <div>
+        <div className='project-card'>
             <div>
                 <h3> {props.name} </h3>
                 <p> {props.description} </p>

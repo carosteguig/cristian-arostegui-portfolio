@@ -11,23 +11,23 @@
 @mixin section-header__mobile {
     font-family: 'Noto Sans';
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 2.25rem;  
 }
 
 @mixin subheader__mobile {
     font-family: 'Noto Sans';
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5rem;  
     letter-spacing: 0.005px;
 }
 
 @mixin body__mobile {
     font-family: 'Noto Sans';
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.5rem;  
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;  
 }
 
 @mixin labels-buttons__mobile {
