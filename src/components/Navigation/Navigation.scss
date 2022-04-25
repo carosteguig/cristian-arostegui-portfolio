@@ -4,6 +4,7 @@
 .nav {
     @include display-flex(row, space-between, center);
     padding: 1rem;
+    background-color: #fdfafa;
 
 
     &__list {

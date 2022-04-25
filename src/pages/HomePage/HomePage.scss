@@ -1,20 +1,25 @@
 @import '../../styles/partials/variables';
 @import '../../styles/partials/mixins';
 
+.wrapper {
+    background-color: #fdfafa;
+}
+
 .header {
-    height: 85vh;
+    height: 90vh;
     // padding: 2rem 1rem;
     // @include display-flex(none, flex-start, none);
+
+    &__container {
+        padding: 4rem 1.5rem 0rem 0;
+    }
 
     &__content {
         @include display-flex(column, none, center);
         height: 30rem;
-        margin: 4rem 1.5rem 0rem 0;
         border-radius: 0 2rem 2rem 0;
         background-image: url('../../assets/images/images/pattern-background.svg');
         background-color: $secondary__color--bkgd-clearCards;
-        // background-repeat: no-repeat;
-        // background-size: 20rem 20rem;
 
         // indented style
         -webkit-box-shadow: inset 0px 10px 2.5px -5px rgb(0, 0, 0, 0.25), inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
@@ -31,28 +36,23 @@
         // under shadow style
     }
 
-    // &__background {
-    //     height: 32rem;
-    //     // margin-right: 1rem;
-    //     // position: relative;
-    //     // left:-19rem;
-    //     // overflow: hidden;
-    //     margin-left: -50%;
-    //     // transform: translateX(-25%);
-        
-    // }
-
     &__img {
         width: 15.5rem;
         margin-top: 4rem;
         // padding-left: 8%
         // margin-left: 10%;
         // margin-right: 10%;
+
+        &:hover {
+            opacity: 0;
+            background-image: url('../../assets/images/images/Lego-face-img2.png');
+        }
         
     }
 
     &__info {
-        margin-top:5rem;
+        margin-top:4rem;
+
 
         &-title {
             @include page-header__mobile;
@@ -72,7 +72,7 @@
         @include display-flex(row, space-around, center);
         padding: 0.5rem 0 0.35rem 0;
         border: solid 2px $secondary__color--icon-frame;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4px;
         margin-left: 10%;
         margin-right: 10%;
@@ -81,7 +81,7 @@
         bottom: 1rem;
         // margin: 0 auto;
         text-align: center;
-
+        z-index: 1;
 
         &-img {
             width: 2rem;
@@ -98,12 +98,12 @@
         text-align: center;
         color: $primary__color--cta-active;
         @include section-header__mobile;
-        margin-bottom: 1.75rem;
+        margin-bottom: 2.5rem;
     }
 
     &-about {
         background-color: $primary__color--text;
-        padding: 3rem 1rem 2rem 1rem;
+        padding: 4rem 1rem 4rem 1rem;
 
 
         &__intro {
@@ -127,20 +127,38 @@
     }
 
     &-projects {
-        padding: 3rem 0rem;
+        padding: 4rem 0rem 4rem 0;
 
         &__cards {
-            // padding: 0 1rem;
+            // padding-right: 1rem;
             @include display-flex(row, center, none);
-            gap: 10%;
             flex-wrap: wrap;
-        }
+            width: 100%;
+            gap:4rem;
 
+            &-item {
+                // margin-bottom: 3rem;
+                
+                &:hover {
+                    filter: contrast(105%);
+                }
+            }
+
+            &-img {
+                        width: 80%;
+                        // margin: 0 0 0 2rem;
+                        // padding: 0 1rem;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+        }
     }
 
     &-contact {
         background-color: $primary__color--text;
-        padding: 3rem 1rem 3rem 1rem;
+        padding: 4rem 1rem 5rem 1rem;
+        // position: relative;
 
 
         &__content {
@@ -167,6 +185,12 @@
         // box-shadow: 2.5px 2.5px 3.5px 1px rgb(0, 0, 0, 0.75);
         // under shadow style
         }
+
+        // &-arrow {
+        //     position: absolute;
+        //     top: 1rem;
+        //     height: 1rem;
+        // }
         
     }
 
@@ -174,7 +198,21 @@
 }
 
 .footer {
+    display: none;
     background-color: $primary__color--text;
     @include labels-buttons__mobile;
     color: $primary__color--second-text;
+    padding: 0 4rem 5.5rem 4rem;
+    text-align: center;
+    position: relative;
+
+    &__content {
+
+        &-arrow {
+            position: absolute;
+            top: -60%;
+            left: 8%;
+        }
+    }
+    
 }

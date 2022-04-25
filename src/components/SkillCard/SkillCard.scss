@@ -4,7 +4,7 @@
 
 .card {
     @include display-flex(column, none, center);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 2.5rem 2rem;
     max-width: 16rem;
     @include body__mobile;
