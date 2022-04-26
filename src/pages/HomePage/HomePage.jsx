@@ -110,6 +110,7 @@ export default function HomePage() {
                                 description='A recipe web app that allows users to create their own meal plans. Users can choose between 1 to 5 different ingredients and they get up to 10 recipes based on those ingredients.'
                                 tags='REACT  SASS  BEM  AXIOS  NODE.js  EXPRESS'
                                 webAddress='https://simple-meal-client-react.herokuapp.com/'
+                                repoAdress='https://github.com/carosteguig/capstone-client/'
                             />
                             <img className='main-projects__cards-img' src={SimpleMeal} alt='Screens samples of simple meal project' />
                         </div>
@@ -118,6 +119,7 @@ export default function HomePage() {
                                 name='CampIt!'
                                 description='UX case study. Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada. Blala balala ala akama jajajas.'
                                 tags='FIGMA   MIRO'
+                                webAddress='https://www.youtube.com/'
                             />
                             <img className='main-projects__cards-img' src={CampIt} alt='Screens samples of CampIt project' />
                         </div>
