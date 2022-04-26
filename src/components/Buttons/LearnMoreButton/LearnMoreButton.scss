@@ -1,0 +1,20 @@
+
+@import '../../../styles/partials/mixins';
+@import '../../../styles/partials/variables';
+
+
+.button__learn-more {
+    height: 2rem;
+    width: 200%;
+    @include labels-buttons__mobile;
+    color: $primary__color--text;
+    background-color: #3a444600;
+    border: .15rem solid $primary__color--text;
+    border-color: $primary__color--text;
+    border-radius: .25rem;
+
+    @include tablet {
+        @include labels-buttons__tablet-desktop;
+
+    }
+}

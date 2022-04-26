@@ -2,36 +2,43 @@
 
 // mobile
 @mixin page-header__mobile {
-    font-family: "Fira Sans";
-    font-size: 2.625rem;
-    font-weight: 500;
+    font-family: "Impact";
+    font-size: 3rem;
+    font-weight: normal;
     line-height: 3rem;
 }
 
 @mixin section-header__mobile {
-    font-family: "Fira Sans";
+    font-family: "Noto Sans";
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: normal;
     line-height: 2.25rem;  
 }
 
 @mixin subheader__mobile {
-    font-family: "Fira Sans";
-    font-size: 1.25rem;
+    font-family: "Noto Sans";
+    font-size: 1rem;
     font-weight: 500;
+    line-height: 1.5rem;  
+    letter-spacing: 0.005px;
+}
+
+@mixin project-header__mobile {
+    font-family: 'Impact';
+    font-size: 1.4rem;
+    font-weight: normal;
     line-height: 1.5rem;  
 }
 
 @mixin body__mobile {
-    font-family: "Fira Sans";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;  
+    font-family: "Noto Sans";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;  
 }
 
 @mixin labels-buttons__mobile {
-    font-family: "Fira Sans";
-    // font-size: .75rem;
+    font-family: "Noto Sans";
     font-size: 0.85rem;
     font-weight: 500;
     line-height: 1.125rem; 
@@ -40,36 +47,44 @@
 //tablet-desktop
 
 @mixin page-header__tablet-desktop {
-    font-family: "Fira Sans";
-    font-size: 3rem;
-    font-weight: 700;
+    font-family: "Impact";
+    font-size: 3.25rem;
+    font-weight: normal;
     line-height: 3rem;
 }
 
 @mixin section-header__tablet-desktop {
-    font-family: "Fira Sans";
+    font-family: "Noto Sans";
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: normal;
     line-height: 2.55rem;
 }
 
 @mixin subheader__tablet-desktop {
-    font-family: "Fira Sans";
-    font-size: 1.5rem;
+    font-family: "Noto Sans";
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.375rem;
 }
 
+@mixin project-header__tablet-desktop {
+    font-family: 'Impact';
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2rem;  
+}
+
 @mixin body__tablet-desktop {
-    font-family: "Fira Sans";
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 2rem;
+    font-family: "Noto Sans";
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    letter-spacing: -0.03rem;
 }
 
 @mixin labels-buttons__tablet-desktop {
-    font-family: "Fira Sans";
-    font-size: 0.875rem;
+    font-family: "Noto Sans";
+    font-size: 0.95rem;
     font-weight: 500;
     line-height: 1.25rem;
 }

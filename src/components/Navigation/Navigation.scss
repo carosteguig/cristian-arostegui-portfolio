@@ -4,6 +4,24 @@
 .nav {
     @include display-flex(row, space-between, center);
     padding: 1rem;
+    background-color: $primary__color--bkgd;
+    border-bottom: solid .0625rem $secondary__color--divider;
+
+    @include tablet {
+        padding: 1rem 2rem;
+
+        @include desktop {
+            padding: 1.5rem 3rem;
+        }
+    }
+
+    &__logo {
+
+        &:hover {
+            opacity: 0.8;
+
+        }
+    }
 
 
     &__list {
@@ -11,7 +29,31 @@
 
         &-link {
             margin-left: 1rem;
+            @include labels-buttons__mobile;
+            color: $primary__color--cta-active;
+
+            @include tablet {
+                @include labels-buttons__tablet-desktop;
+
+                @include desktop {
+                    margin-left: 2rem;
+                }
+            }
+
+            &:hover {
+                color: $secondary__color--cta-hover;
+                opacity: 0.8;
+                text-decoration: underline;
+
+            }
+
+            &--active {
+                font-weight: 500;
+                // text-decoration: underline;
+            }
         }
+
+
     }
 
 }
