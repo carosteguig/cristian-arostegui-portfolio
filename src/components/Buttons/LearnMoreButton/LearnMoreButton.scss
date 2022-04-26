@@ -12,4 +12,9 @@
     border: .15rem solid $primary__color--text;
     border-color: $primary__color--text;
     border-radius: .25rem;
+
+    @include tablet {
+        @include labels-buttons__tablet-desktop;
+
+    }
 }

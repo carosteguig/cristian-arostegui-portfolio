@@ -1,6 +1,6 @@
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
-import LegoFace from '../../assets/images/images/Lego-face-img.png';
+import LegoFace from '../../assets/images/images/Lego-face-imgSmall.svg';
 // import MeFace from '../../assets/images/images/Lego-face-img2.png';
 import GithubIcon from '../../assets/images/icons/github-icon.svg';
 import LinkedinIcon from '../../assets/images/icons/linkedin-icon.svg';
@@ -9,7 +9,8 @@ import DesignerIcon from '../../assets/images/icons/designer-icon.svg';
 import WebDevIcon from '../../assets/images/icons/webDev-icon.svg';
 import SimpleMeal from '../../assets/images/images/Simple-Meal-img.png';
 import CampIt from '../../assets/images/images/CampIt-img.png';
-import Arrow from '../../assets/images/icons/arrow1.svg';
+import Logo from '../../assets/images/logo/logo.svg';
+
 // import Pattern from '../../assets/images/images/pattern-background.svg';
 import SkillCard from '../../components/SkillCard/SkillCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
@@ -40,18 +41,17 @@ export default function HomePage() {
         'Git'
     ]
 
-    function handleMouseEnter(e) {
-        console.log(e.target);
-    }
+    // function handleMouseEnter(e) {
+    //     console.log(e.target);
+    // }
 
     return (
         <div className='wrapper'>
             <header className='header'>
                 <div className='header__container'>
                     <div className='header__content'>
-                        {/* <img className='header__background' src={Pattern} alt='background pattern design' /> */}
-                        <img className='header__img' src={LegoFace} alt="Cristian Arostegui's face, or not?" 
-                        onMouseEnter={handleMouseEnter}
+                        <img className='header__img' src={LegoFace} alt="Cristian Arostegui's face, or not?"
+                        // onMouseEnter={handleMouseEnter}
                         />
                         <div className='header__info'>
                             <h1 className='header__info-title'>Cristian Arostegui G.</h1>
@@ -63,7 +63,7 @@ export default function HomePage() {
                             <img className='header__icons-img' src={GithubIcon} alt="Github button link" />
                         </Link>
                         <Link className='header__icons-link' to={{ pathname: 'mailto:carosteguig@gmail.com' }} target="_blank"> {/*Need to sort the mailto link problem*/}
-                            <img className='header__icons-img' src={EmailIcon} />
+                            <img className='header__icons-img' src={EmailIcon} alt='email button link' />
                         </Link>
                         <Link className='header__icons-link' to={{ pathname: 'https://www.linkedin.com/in/cristianarosteguig/' }} target="_blank">
                             <img className='header__icons-img' src={LinkedinIcon} alt='linkedin button link' />
@@ -115,7 +115,7 @@ export default function HomePage() {
                         <div className='main-projects__cards-item'>
                             <ProjectCard
                                 name='CampIt!'
-                                description='UX case study_Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada'
+                                description='UX case study. Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada. Blala balala ala akama jajajas.'
                                 tags='FIGMA   MIRO'
                             />
                             <img className='main-projects__cards-img' src={CampIt} alt='Screens samples of CampIt project' />
@@ -125,19 +125,23 @@ export default function HomePage() {
                 <section className='main-contact'>
                     <h2 className='main-contact__title main-titles'>// contact me</h2>
                     <div className='main-contact__content'>
-                        <p className='main-contact__text'>Please don’t be rude and say hi,
-                            I spent some time designing and coding this portfolio. Let me know how I did!
+                        <p className='main-contact__text'>Please don’t be rude and say hi. Would ove to hear from you.
+                            I did spend some time designing and coding this portfolio. Let me know how I did, I would really appreciate it!
                         </p>
                         <p className='main-contact__text'>
                             You can find me on any of these links. Thanks for looking!
-                        </p>
+                        </p>                       
                     </div>
-                    {/* <img className='main-contact__arrow' src={Arrow} alt='arrow' /> */}
+                    <p className='main-contact__text--bottom'>
+                        If you are in Beatuful Victoria, British Columbia, let me know. I would be more than happy to take you for coffee and talk about UX-Web-Furniture design!!
+                    </p>
                 </section>
             </main>
             <footer className='footer'>
-                <p className='footer__content'>Designed and developed by Cristian Arostegui G // 2022</p>
-                <img className='footer__content-arrow' src={Arrow} alt='arrow' />
+                <div className='footer__container'>
+                    <img className='footer__logo' src={Logo} alt='Cristian Arostegui logo' />
+                    <p className='footer__content'>Designed and developed by Cristian Arostegui G // 2022</p>
+                </div>
             </footer>
 
         </div>

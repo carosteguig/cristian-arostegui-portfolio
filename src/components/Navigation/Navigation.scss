@@ -5,6 +5,7 @@
     @include display-flex(row, space-between, center);
     padding: 1rem;
     background-color: #fdfafa;
+    border-bottom: solid .0625rem $secondary__color--divider;
 
     @include tablet {
         padding: 1rem 2rem;

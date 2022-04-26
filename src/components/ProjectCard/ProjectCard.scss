@@ -28,19 +28,35 @@
     // box-shadow: 2.5px 2.5px 3.5px 1px rgb(121, 120, 120), -10px 2.5px 3.5px 1px rgb(121, 120, 120);
     // under shadow style
 
+    @include tablet {
+        margin: 0rem 9rem 2rem 0;
+        padding: 3.5rem 3rem 3.5rem 7rem;
+
+    }
+
     }
 
     &__title {
         @include project-header__mobile;
         color: $primary__color--text;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
+
+        @include tablet {
+            @include project-header__tablet-desktop;
+            margin-bottom: 0.75rem;
+        }
     }
 
     &__description {
         @include body__mobile;
         color: $primary__color--text;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
         font-weight: normal;
+
+        @include tablet {
+            @include body__tablet-desktop;
+            margin-bottom: 0.75rem;
+        }
     }
 
     &__tags {
@@ -48,5 +64,12 @@
         color: $primary__color--cta-active;
         margin-bottom: 1rem;
         font-weight: 600;
+
+        @include tablet {
+            @include body__tablet-desktop;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+
+        }
     }
 }

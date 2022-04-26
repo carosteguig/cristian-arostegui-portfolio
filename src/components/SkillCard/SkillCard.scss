@@ -28,32 +28,64 @@
     // box-shadow: 2.5px 2.5px 3.5px 1px rgb(0, 0, 0, 0.75);
     // under shadow style
 
+    @include tablet {
+        padding: 3.5rem 2rem;
+        margin-bottom: 0.5rem;
+    }
+
     &__icon {
         width: 5rem;
         margin-bottom: 1.5rem;
+
+        @include tablet {
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__title {
         @include subheader__mobile;
         color: $primary__color--cta-active;
         margin-bottom: 1rem;
+
+        @include tablet {
+            @include subheader__tablet-desktop;
+            margin-bottom: 1.75rem;
+        }
     }
 
     &__description {
         @include body__mobile;
         color: $primary__color--second-text;
         margin-bottom: 2rem;
+
+        @include tablet {
+            @include body__tablet-desktop;
+            font-weight: 300;
+            letter-spacing: 0.02rem;
+            margin-bottom: 3rem;
+        }
     }
 
     &__skills-title {
         @include subheader__mobile;
         color: $primary__color--cta-active;
         margin-bottom: 1rem;
+
+        @include tablet {
+            @include subheader__tablet-desktop;
+            margin-bottom: 1.75rem;
+        }
     }
 
     &__skills {
         @include body__mobile;
         color: $primary__color--second-text;
         // margin-bottom: 2rem;
+
+        @include tablet {
+            @include body__tablet-desktop;
+            font-weight: 300;
+            letter-spacing: 0.02rem;
+        }
     }
 }
