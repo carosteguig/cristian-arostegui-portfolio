@@ -1,7 +1,7 @@
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
 import LegoFace from '../../assets/images/images/Lego-face-img.png';
-import MeFace from '../../assets/images/images/Lego-face-img2.png';
+// import MeFace from '../../assets/images/images/Lego-face-img2.png';
 import GithubIcon from '../../assets/images/icons/github-icon.svg';
 import LinkedinIcon from '../../assets/images/icons/linkedin-icon.svg';
 import EmailIcon from '../../assets/images/icons/email-icon.svg';
@@ -40,13 +40,19 @@ export default function HomePage() {
         'Git'
     ]
 
+    function handleMouseEnter(e) {
+        console.log(e.target);
+    }
+
     return (
         <div className='wrapper'>
             <header className='header'>
                 <div className='header__container'>
                     <div className='header__content'>
                         {/* <img className='header__background' src={Pattern} alt='background pattern design' /> */}
-                        <img className='header__img' src={LegoFace} alt="Cristian Arostegui's face, or not?" onMouseOver={MeFace} />
+                        <img className='header__img' src={LegoFace} alt="Cristian Arostegui's face, or not?" 
+                        onMouseEnter={handleMouseEnter}
+                        />
                         <div className='header__info'>
                             <h1 className='header__info-title'>Cristian Arostegui G.</h1>
                             <p className='header__info-text'>UX designer / Web developer based in Victoria, BC, Canada</p>

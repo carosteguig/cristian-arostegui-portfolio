@@ -6,6 +6,10 @@
     padding: 1rem;
     background-color: #fdfafa;
 
+    @include tablet {
+        padding: 1rem 2rem;
+    }
+
 
     &__list {
         @include display-flex(row, flex-end, none);
@@ -14,6 +18,10 @@
             margin-left: 1rem;
             @include labels-buttons__mobile;
             color: $primary__color--cta-active;
+
+            @include tablet {
+                @include labels-buttons__tablet-desktop;
+            }
 
             &:hover {
                 color: $secondary__color--cta-hover;

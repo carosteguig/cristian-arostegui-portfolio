@@ -3,8 +3,8 @@ import './LearnMoreButton.scss';
 export default function LearnMoreButton() {
 
     return (
-        <div>
-            <button>Learn More</button>
-        </div>
+        <>
+            <button className='button__learn-more'>Learn More</button>
+        </>
     );
 } 
