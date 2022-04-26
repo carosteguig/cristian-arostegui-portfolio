@@ -14,7 +14,13 @@
     padding: 4rem 1.5rem 0rem 0;
 
     @include tablet {
-      padding: 8rem 7rem 0rem 0;
+      padding: 10vh 7rem 0rem 0;
+
+
+      @include desktop {
+        padding: 19vh 8rem 0rem 0;
+        @include display-flex(row, flex-start, center);
+      }
     }
   }
 
@@ -32,9 +38,9 @@
       inset -10px -10px 2.5px -5px rgb(236, 233, 233, 0.5);
     box-shadow: inset 0px 13px 5.5px -5px rgb(0, 0, 0, 0.25),
       inset -15px -15px 5.5px -5px rgba(255, 255, 255, 0.75);
-    border-top: 1px solid rgba(172, 170, 170, 0.75);
-    border-right: 1px solid rgb(247, 247, 247);
-    border-bottom: 1px solid rgb(247, 247, 247);
+    border-top: 1px solid rgba(172, 170, 170, 1);
+    border-right: 1px solid rgb(172, 170, 170, 0.25);
+    border-bottom: 1px solid rgb(172, 170, 170, 0.125);
     // indented style
 
     // under shadow style
@@ -43,6 +49,11 @@
 
     @include tablet {
       width: 95%;
+
+      @include desktop {
+        @include display-flex(row, center, none);
+        height: 28rem;
+      }
     }
   }
 
@@ -55,6 +66,10 @@
       width: 15.5rem;
       margin-top: 0rem;
       padding-right: 3.75rem;
+
+      @include desktop {
+        order: 1;
+      }
     }
   }
 
@@ -75,6 +90,11 @@
       @include tablet {
         @include page-header__tablet-desktop;
         padding-left: 8;
+
+        @include desktop {
+          // width: 60%;
+          // margin-bottom: 0.5rem;
+        }
       }
     }
 
@@ -87,6 +107,11 @@
       @include tablet {
         font-size: 0.97rem;
         padding-left: 8;
+
+        @include desktop {
+          margin-bottom: 3rem;
+          padding-right: 0;
+        }
       }
     }
   }
@@ -95,15 +120,13 @@
     @include display-flex(row, space-around, center);
     padding: 0.5rem 0 0.35rem 0;
     border: solid 2px $secondary__color--icon-frame;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
     margin-left: 10%;
     margin-right: 10%;
     width: 78%;
     position: fixed;
     bottom: 2rem;
-    // left: 0.0875rem;
-    // margin: 0 auto;
     text-align: center;
     z-index: 1;
 
@@ -113,9 +136,12 @@
       width: auto;
       height: 15rem;
       bottom: 15.5rem;
-      // left: 79%;
+      // bottom: 34vh;
       right: -3rem;
-      background-color: rgba(255, 255, 255, 0);
+
+      @include desktop {
+        right: -6rem;
+      }
     }
 
     &-img {
@@ -135,6 +161,10 @@
       @include section-header__tablet-desktop;
       margin-bottom: 3.5rem;
       text-align: center;
+
+      @include desktop {
+        margin-bottom: 5.5rem;
+      }
     }
   }
 
@@ -143,18 +173,19 @@
     padding: 4rem 1rem 4rem 1rem;
 
     @include tablet {
-      padding: 6rem 6rem 5rem 6rem;
-      // @include display-flex(column, none, center);
+      padding: 6rem 6rem 7rem 6rem;
+
+      @include desktop {
+        padding: 9rem 6rem 10rem 6rem;
+      }
     }
 
     &__intro {
       @include body__mobile;
       color: $primary__color--second-text;
-      // margin-bottom: 3rem;
       padding: 0 1rem 3rem 1rem;
 
       @include tablet {
-        // @include display-flex(column, none, center);
         @include body__tablet-desktop;
         font-weight: 300;
         letter-spacing: 0.04rem;
@@ -187,12 +218,15 @@
 
     @include tablet {
       padding: 6rem 0rem 5rem 0rem;
+
+      @include desktop {
+        padding: 8rem 0rem 7rem 0rem;
+      }
     }
 
     &__cards {
       // padding-right: 1rem;
-      @include display-flex(row, center, none);
-      flex-wrap: wrap;
+      // @include display-flex(row, center, none);
       width: 100%;
       gap: 4rem;
 
@@ -200,6 +234,14 @@
         // margin-bottom: 3rem;
 
         @include tablet {
+          margin-bottom: 3rem;
+
+          @include desktop {
+            @include display-flex(row, center, center);
+            gap: 2rem;
+            width:100%;
+            margin-bottom: 5rem;
+          }
         }
 
         &:hover {
@@ -216,10 +258,15 @@
         padding-bottom: 1rem;
 
         @include tablet {
-          width: 50%;
+          // width: 50%;
+          max-width: 31.25rem;
           padding-right: 15%;
           // max-width: fit-content;
           // height: 50%;
+
+          @include desktop {
+            max-width: 25rem;
+          }
         }
       }
     }
@@ -227,12 +274,15 @@
 
   &-contact {
     background-color: $primary__color--text;
-    // background-color: #fdfafa;
     padding: 4rem 2rem 3rem 2rem;
-    // position: relative;
+    @include display-flex(column, none, center);
 
     @include tablet {
       padding: 4rem 9rem 5rem 9rem;
+
+      @include desktop {
+        padding: 8rem 6rem 8rem 6rem;
+      }
     }
 
     &__content {
@@ -266,6 +316,12 @@
         @include body__tablet-desktop;
         font-weight: 300;
         letter-spacing: 0.02rem;
+        max-width: 38rem;
+
+        @include desktop {
+          max-width: 38rem;
+
+        }
       }
     }
 
@@ -274,11 +330,13 @@
       color: $primary__color--second-text;
       font-style: italic;
       padding:  1rem;
+      max-width: 37rem;
       
 
       @include tablet {
           @include body__tablet-desktop;
           font-weight: 300;
+          letter-spacing: 0.02rem;
       }
     }
   }
@@ -307,6 +365,7 @@
 
     @include tablet {
       margin-bottom: 2rem;
+
     }
   }
 }

@@ -9,7 +9,7 @@ import DesignerIcon from '../../assets/images/icons/designer-icon.svg';
 import WebDevIcon from '../../assets/images/icons/webDev-icon.svg';
 import SimpleMeal from '../../assets/images/images/Simple-Meal-img.png';
 import CampIt from '../../assets/images/images/CampIt-img.png';
-import Logo from '../../assets/images/logo/logo.svg';
+import Logo from '../../assets/images/logo/logo-circle2.png';
 
 // import Pattern from '../../assets/images/images/pattern-background.svg';
 import SkillCard from '../../components/SkillCard/SkillCard';
@@ -86,7 +86,7 @@ export default function HomePage() {
                             image={DesignerIcon}
                             altText='pen drawing'
                             title='Designer'
-                            description='Trying not to get complicated with simplicity, but simplicity is quite complicated'
+                            description='Trying not to get complicated with simplicity, but simplicity is quite complicated. I love easy interactions'
                             skillsTitle='Skills'
                             skills={designerSkills}
                         />
@@ -133,7 +133,9 @@ export default function HomePage() {
                         </p>                       
                     </div>
                     <p className='main-contact__text--bottom'>
-                        If you are in Beatuful Victoria, British Columbia, let me know. I would be more than happy to take you for coffee and talk about UX-Web-Furniture design!!
+                        If you are in Beatuful Victoria, British Columbia, let me know. I would be more than happy
+                         to take you for coffee and talk about UX-Web-Furniture design, tennis, 
+                         footbal (soccer for just a few), movies and maybe why I used a lego character that looks like my wife as a profile photo!!
                     </p>
                 </section>
             </main>

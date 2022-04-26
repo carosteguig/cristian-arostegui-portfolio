@@ -19,8 +19,8 @@
     -moz-box-shadow: inset 15px 15px 5.5px -5px rgb(0, 0, 0, 0.35), inset -15px -15px 5.5px -5px rgb(236, 233, 233, 0.1);
     box-shadow: inset 0px 13px 5.5px -5px rgb(0, 0, 0, 0.35), inset -15px -15px 5.5px -5px rgba(255, 255, 255, 0.75);
     border-top: 1px solid rgba(172, 170, 170, 0.75);
-    border-right: 1px solid rgb(247, 247, 247);
-    border-bottom: 1px solid rgb(247, 247, 247);
+    border-right: 1px solid rgb(172, 170, 170, 0.25);
+    border-bottom: 1px solid rgb(172, 170, 170, 0.125);
     // indented style
 
     
@@ -31,6 +31,11 @@
     @include tablet {
         margin: 0rem 9rem 2rem 0;
         padding: 3.5rem 3rem 3.5rem 7rem;
+
+        @include desktop {
+            margin: 0rem 1rem 2rem 0;
+
+        }
 
     }
 
