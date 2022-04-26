@@ -11,6 +11,14 @@
         padding: 1rem 2rem;
     }
 
+    &__logo {
+
+        &:hover {
+            opacity: 0.8;
+
+        }
+    }
+
 
     &__list {
         @include display-flex(row, flex-end, none);
