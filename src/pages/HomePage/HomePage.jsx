@@ -109,6 +109,7 @@ export default function HomePage() {
                                 name='Simple Meal'
                                 description='A recipe web app that allows users to create their own meal plans. Users can choose between 1 to 5 different ingredients and they get up to 10 recipes based on those ingredients.'
                                 tags='REACT  SASS  BEM  AXIOS  NODE.js  EXPRESS'
+                                webAddress='https://simple-meal-client-react.herokuapp.com/'
                             />
                             <img className='main-projects__cards-img' src={SimpleMeal} alt='Screens samples of simple meal project' />
                         </div>

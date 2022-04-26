@@ -10,7 +10,9 @@ export default function ProjectCard(props) {
                 <p className='project-card__description'> {props.description} </p>
                 <p className='project-card__tags'> {props.tags} </p>
                 <div>
-                    <LearnMoreButton />
+                    <LearnMoreButton 
+                    webAddress
+                    />
                 </div>
             </div>
             <div>

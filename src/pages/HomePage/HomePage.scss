@@ -225,8 +225,6 @@
     }
 
     &__cards {
-      // padding-right: 1rem;
-      // @include display-flex(row, center, none);
       width: 100%;
       gap: 4rem;
 
@@ -238,14 +236,14 @@
 
           @include desktop {
             @include display-flex(row, center, center);
-            gap: 2rem;
+            gap: 4rem;
             width:100%;
             margin-bottom: 5rem;
           }
         }
 
         &:hover {
-          filter: contrast(100%);
+          filter: contrast(105%);
         }
       }
 
