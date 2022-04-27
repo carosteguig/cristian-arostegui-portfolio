@@ -101,7 +101,7 @@ export default function HomePage() {
                     </div>
                     {/* <p className='main-about__link'>projects</p>  */}
                 </section>
-                <section className='main-projects'>
+                <section className='main-projects' id='projects'>
                     <h2 className='main-projects__title main-titles'>// projects</h2>
                     <div className='main-projects__cards'>
                         <div className='main-projects__cards-item'>
@@ -119,10 +119,10 @@ export default function HomePage() {
                         <div className='main-projects__cards-item'>
                             <ProjectCard
                                 name='CampIt!'
-                                description='UX case study. Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada. Blala balala ala akama jajajas.'
+                                description='UX case study. Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada. Currently working on adding the full study to the portfolio. In the meantime, please review the study in PDF format.'
                                 tags='FIGMA   MIRO'
-                                text1='Learn More'
-                                webAddress='https://www.youtube.com/'
+                                text1='Review Study'
+                                webAddress='https://drive.google.com/file/d/1-5nQcuB7Nlx4N0z6mMOOsb4FRRiwn7e-/view'
                                 text2='Prototype'
                                 webAddress2='https://www.figma.com/proto/npl6IJhacFvtqcC0FbWiw5/Udacity-UX-course-file?node-id=251%3A585&scaling=scale-down'
                             />

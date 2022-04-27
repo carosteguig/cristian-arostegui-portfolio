@@ -79,7 +79,11 @@
     @include tablet {
       @include display-flex(column, none, flex-start);
       padding-left: 2.5rem;
-      // width: 19rem;
+
+      @include desktop {
+        padding-left: 7%;
+
+      }
     }
 
     &-title {
