@@ -2,20 +2,29 @@
 @import '../../../styles/partials/variables';
 
 
-.button__repo {
+.button__outline {
+    width: 7rem;
     padding: .5rem 1.75rem;
     @include labels-buttons__mobile;
+    font-weight: 600;
     color: $primary__color--text;
-    background-color: #3a444600;
     border: .15rem solid $primary__color--text;
     border-color: $primary__color--text;
     border-radius: .25rem;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background-color: $primary__color--text;
+        color: $primary__color--second-text;
+    }
     
 
     @include tablet {
+        width: 8rem;
+        padding: .65rem 2rem;
         @include labels-buttons__tablet-desktop;
-
+        font-weight: 600;
     }
 }

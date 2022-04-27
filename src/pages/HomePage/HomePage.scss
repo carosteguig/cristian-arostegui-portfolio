@@ -189,9 +189,13 @@
         @include body__tablet-desktop;
         font-weight: 300;
         letter-spacing: 0.04rem;
-        max-width: 44rem;
+        max-width: 42rem;
         margin: 0 auto;
         padding: 0 1rem 4.5rem 1rem;
+
+        @include desktop {
+          max-width: 50rem;
+        }
       }
     }
 
@@ -229,7 +233,7 @@
       gap: 4rem;
 
       &-item {
-        // margin-bottom: 3rem;
+        margin-bottom: 4rem;
 
         @include tablet {
           margin-bottom: 3rem;
@@ -249,8 +253,7 @@
 
       &-img {
         width: 80%;
-        // margin: 0 0 0 2rem;
-        // padding: 0 1rem;
+        max-width: 23rem;
         display: block;
         margin: 0 auto;
         padding-bottom: 1rem;
@@ -317,7 +320,7 @@
         max-width: 38rem;
 
         @include desktop {
-          max-width: 38rem;
+          max-width: 46rem;
 
         }
       }
@@ -330,11 +333,15 @@
       padding:  1rem;
       max-width: 37rem;
       
-
       @include tablet {
           @include body__tablet-desktop;
           font-weight: 300;
           letter-spacing: 0.02rem;
+          max-width: 42rem;
+
+          @include desktop {
+            max-width: 50rem;
+          }
       }
     }
   }
@@ -345,16 +352,16 @@
     // display: none;
     background-color: $primary__color--text;
     @include labels-buttons__mobile;
-    font-weight: normal;
+    font-weight: 300;
     color: $primary__color--second-text;
-    padding: 0 4rem 8rem 4rem;
+    padding: 0 4rem 7rem 4rem;
     text-align: center;
     position: relative;
 
     @include tablet {
       padding: 0 4rem 2rem 4rem;
       @include labels-buttons__tablet-desktop;
-      font-weight: normal;
+      font-weight: 300;
     }
   }
 
