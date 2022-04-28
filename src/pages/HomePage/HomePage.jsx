@@ -106,6 +106,19 @@ export default function HomePage() {
                 <section className='main-projects' id='projects'>
                     <h2 className='main-projects__title main-titles'>// projects</h2>
                     <div className='main-projects__cards'>
+                    <div className='main-projects__cards-item'>
+                            <ProjectCard
+                                name='Portfolio'
+                                description='Oh yes, I am adding my portfolio. While designing and coding this site, I enhance my knowledge on by using reusable components such as the
+                                about cards section, the projects cards and buttons section'
+                                tags='REACT / SASS / BEM  / REUSABLE COMPONENTS'
+                                text1='Demo'
+                                webAddress='https://simple-meal-client-react.herokuapp.com/'
+                                text2='Repository'
+                                webAddress2='https://github.com/carosteguig/capstone-client'
+                            />
+                            <img className='main-projects__cards-img' src={SimpleMeal} alt='Screens samples of simple meal project' />
+                        </div>
                         <div className='main-projects__cards-item'>
                             <ProjectCard
                                 name='Simple Meal'
