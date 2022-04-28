@@ -66,6 +66,10 @@
             font-weight: 300;
             letter-spacing: 0.02rem;
             margin-bottom: 3rem;
+
+            @include desktop {
+                height: 5rem;
+            }
         }
     }
 

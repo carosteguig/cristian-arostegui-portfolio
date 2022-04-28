@@ -77,16 +77,18 @@ export default function HomePage() {
                     <div className='main-about__intro'>
                         <h2 className='main-about__title main-titles'>// about</h2>
                         <p className='main-about__text-single'>Furniture designer turned UX designer and Web developer.</p>
-                        <p>For the last 3 years I have been learning about UX and UI design and my goal is to combine these skills with web development.
-                            I really believe that by combining dev and designs skills, I can design and develop better products. Just like in furniture,
-                            by learning how to fabricate and build furniture, I gained a whole new perspective on how to design furniture.<span className='main-about__text-link'>Learn more...</span></p>
+                        <p>Hola! Nice to meet you! 
+                            For over 10 years I have honed my design and attention to detail skills in the furniture design industry. In the last 3 years I have brought this experience to compliment web development and UX design. 
+                            You may not sit on a website, but just like furniture, they need to be functional, beautiful and user-friendly ;). I’ve got that covered! 
+                            When I’m not coding and designing, you can find me running around after my two kiddos, playing tennis or futbol (I have a hard time calling it soccer!) and watching movies that my partner would describe as boringly artistic. 
+ </p>
                     </div>
                     <div className='main-about__cards'>
                         <SkillCard
                             image={DesignerIcon}
                             altText='pen drawing'
                             title='Designer'
-                            description='Trying not to get complicated with simplicity, but simplicity is quite complicated. I love easy interactions'
+                            description='Trying not to get complicated with simplicity, but simplicity is quite complicated. I love designing easy user interactions'
                             skillsTitle='Skills'
                             skills={designerSkills}
                         />
@@ -94,7 +96,7 @@ export default function HomePage() {
                             image={WebDevIcon}
                             altText='code icon'
                             title='Web Developer'
-                            description='You know the feeling when a line of code works!  Looking forward to getting many more of those. Excited to what comes later'
+                            description='You know that feeling when a line of code works! Looking forward to a career full of those endorphin rushes'
                             skillsTitle='Skills'
                             skills={webDevSkills}
                         />
@@ -107,11 +109,11 @@ export default function HomePage() {
                         <div className='main-projects__cards-item'>
                             <ProjectCard
                                 name='Simple Meal'
-                                description='A recipe web app that allows users to create their own meal plans. 
-                                Users can choose between 1 to 5 different ingredients and they get up to 10 recipes based on those ingredients.
-                                Talk about its made to simplify meal planning and reduce food waste'
-                                tags='REACT / SASS / BEM   AXIOS / NODE.js / EXPRESS'
-                                text1='Live Site'
+                                description='A recipe web app that allows users to create their own meal plans. Users can choose between 1 to 5 different 
+                                ingredients they wish to use up and get up to 10 recipes based on those ingredients. The goal was to simplify meal planning, 
+                                reduce food waste and help people stay on budget by using foods they already have on hand.'
+                                tags='REACT / SASS / BEM  / AXIOS / NODE.js / EXPRESS'
+                                text1='Demo'
                                 webAddress='https://simple-meal-client-react.herokuapp.com/'
                                 text2='Repository'
                                 webAddress2='https://github.com/carosteguig/capstone-client'
@@ -121,7 +123,9 @@ export default function HomePage() {
                         <div className='main-projects__cards-item'>
                             <ProjectCard
                                 name='CampIt!'
-                                description='UX case study. Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada. Currently working on adding the full study to the portfolio. In the meantime, please review the study in PDF format.'
+                                description='UX case study. Design proposal for a more user-friendly online campsite booking platform in Vancouver Island, 
+                                Canada (if you’ve ever tried to camp on this beautiful island, you’ll know the frustration of the current sites!). 
+                                Currently working on adding the full study to the portfolio. In the meantime, please review the study in PDF format.'
                                 tags='FIGMA / MIRO'
                                 text1='Review Study'
                                 webAddress='https://drive.google.com/file/d/1-5nQcuB7Nlx4N0z6mMOOsb4FRRiwn7e-/view'
@@ -147,17 +151,17 @@ export default function HomePage() {
                 <section className='main-contact'>
                     <h2 className='main-contact__title main-titles'>// contact me</h2>
                     <div className='main-contact__content'>
-                        <p className='main-contact__text'>Please don’t be rude and say hi. Would ove to hear from you.
-                            I did spend some time designing and coding this portfolio. Let me know how I did, I would really appreciate it!
+                        <p className='main-contact__text'>Say hi, don't be shy! I would love to hear from you. I spent some time designing and coding this 
+                        portfolio. Let me know how I did! Feedback is always welcome! (assuming no one looking at this is a crazy mean troll of course…).
+
                         </p>
                         <p className='main-contact__text'>
-                            You can find me on any of these links. Thanks for looking!
+                            You can find me on any of these links below or on your right, depending if you are looking at this on a mobile phone or tablet/desktop. Thanks for looking!
                         </p>                       
                     </div>
                     <p className='main-contact__text--bottom'>
-                        If you are in Beatuful Victoria, British Columbia, let me know. I would be more than happy
-                         to take you for coffee and talk about UX-Web-Furniture design, tennis, 
-                         footbal (soccer for just a few), movies and maybe tell you why I used a lego character that looks like my wife as a profile photo!!
+                    If you ever  find yourself  in beautiful Victoria, BC, let me know. I’m always happy to chat about development and design 
+                    (or futbol or tennis or many other random topics) over a cup of coffee. 
                     </p>
                 </section>
             </main>
