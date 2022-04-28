@@ -107,8 +107,10 @@ export default function HomePage() {
                         <div className='main-projects__cards-item'>
                             <ProjectCard
                                 name='Simple Meal'
-                                description='A recipe web app that allows users to create their own meal plans. Users can choose between 1 to 5 different ingredients and they get up to 10 recipes based on those ingredients.'
-                                tags='REACT  SASS  BEM  AXIOS  NODE.js  EXPRESS'
+                                description='A recipe web app that allows users to create their own meal plans. 
+                                Users can choose between 1 to 5 different ingredients and they get up to 10 recipes based on those ingredients.
+                                Talk about its made to simplify meal planning and reduce food waste'
+                                tags='REACT / SASS / BEM   AXIOS / NODE.js / EXPRESS'
                                 text1='Live Site'
                                 webAddress='https://simple-meal-client-react.herokuapp.com/'
                                 text2='Repository'
@@ -120,11 +122,23 @@ export default function HomePage() {
                             <ProjectCard
                                 name='CampIt!'
                                 description='UX case study. Design proposal for user friendly online campsite booking platform in Vancouver Island, Canada. Currently working on adding the full study to the portfolio. In the meantime, please review the study in PDF format.'
-                                tags='FIGMA   MIRO'
+                                tags='FIGMA / MIRO'
                                 text1='Review Study'
                                 webAddress='https://drive.google.com/file/d/1-5nQcuB7Nlx4N0z6mMOOsb4FRRiwn7e-/view'
                                 text2='Prototype'
                                 webAddress2='https://www.figma.com/proto/npl6IJhacFvtqcC0FbWiw5/Udacity-UX-course-file?node-id=251%3A585&scaling=scale-down'
+                            />
+                            <img className='main-projects__cards-img' src={CampIt} alt='Screens samples of CampIt project' />
+                        </div>
+                        <div className='main-projects__cards-item'>
+                            <ProjectCard
+                                name='Furniture Design'
+                                description='Before entering the world of web development and UX design, I honed my design, attention to detail and creative problem-solving skills while ensuring positive relationships with clients in the furniture design industry. This design background, now coupled with the hard coding skills, help me create functional and beautiful products. '
+                                tags='AUTOCAD / 3DS-MAX'
+                                text1='Arostegui Studio'
+                                webAddress='https://www.douglasmagazine.com/arostegui-studio-creates-furniture-blends-form-function/'
+                                text2='Caramba'
+                                webAddress2='https://wp.vancouver.interiordesignshow.com/embedded/2020/05/ids-360-virtual-series-caramba-furniture/'
                             />
                             <img className='main-projects__cards-img' src={CampIt} alt='Screens samples of CampIt project' />
                         </div>
@@ -143,7 +157,7 @@ export default function HomePage() {
                     <p className='main-contact__text--bottom'>
                         If you are in Beatuful Victoria, British Columbia, let me know. I would be more than happy
                          to take you for coffee and talk about UX-Web-Furniture design, tennis, 
-                         footbal (soccer for just a few), movies and maybe why I used a lego character that looks like my wife as a profile photo!!
+                         footbal (soccer for just a few), movies and maybe tell you why I used a lego character that looks like my wife as a profile photo!!
                     </p>
                 </section>
             </main>
