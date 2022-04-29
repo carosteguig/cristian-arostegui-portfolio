@@ -1,13 +1,15 @@
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
 import LegoFace from '../../assets/images/images/Lego-face-imgSmall.svg';
-// import MeFace from '../../assets/images/images/Lego-face-img2.png';
+import Mememe from '../../assets/images/images/me-image-text.png';
+// import MeArrow from '../../assets/images/images/text-me.png';
 import GithubIcon from '../../assets/images/icons/github-icon.svg';
 import LinkedinIcon from '../../assets/images/icons/linkedin-icon.svg';
 import EmailIcon from '../../assets/images/icons/email-icon.svg';
 import DesignerIcon from '../../assets/images/icons/designer-icon.svg';
 import WebDevIcon from '../../assets/images/icons/webDev-icon.svg';
 import SimpleMeal from '../../assets/images/images/Simple-Meal-img.png';
+import Portfolio from '../../assets/images/images/portfolio-img.png';
 import CampIt from '../../assets/images/images/CampIt-img.png';
 import Logo from '../../assets/images/logo/logo-circle2.png';
 
@@ -50,7 +52,7 @@ export default function HomePage() {
             <header className='header'>
                 <div className='header__container'>
                     <div className='header__content'>
-                        <img className='header__img' src={LegoFace} alt="Cristian Arostegui's face, or not?"
+                        <img className='header__img' src={Mememe} alt="Cristian Arostegui's face, or not?"
                         // onMouseEnter={handleMouseEnter}
                         />
                         <div className='header__info'>
@@ -113,11 +115,11 @@ export default function HomePage() {
                                 about cards section, the projects cards and buttons section'
                                 tags='REACT / SASS / BEM  / REUSABLE COMPONENTS'
                                 text1='Demo'
-                                webAddress='https://simple-meal-client-react.herokuapp.com/'
+                                webAddress='/#projects'
                                 text2='Repository'
-                                webAddress2='https://github.com/carosteguig/capstone-client'
+                                webAddress2='https://github.com/carosteguig/cristian-arostegui-portfolio'
                             />
-                            <img className='main-projects__cards-img' src={SimpleMeal} alt='Screens samples of simple meal project' />
+                            <img className='main-projects__cards-img' src={Portfolio} alt='Screens samples of simple meal project' />
                         </div>
                         <div className='main-projects__cards-item'>
                             <ProjectCard
@@ -161,7 +163,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
-                <section className='main-contact'>
+                <section className='main-contact' id='contact'>
                     <h2 className='main-contact__title main-titles'>// contact me</h2>
                     <div className='main-contact__content'>
                         <p className='main-contact__text'>Say hi, don't be shy! I would love to hear from you. I spent some time designing and coding this 
