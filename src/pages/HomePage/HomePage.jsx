@@ -1,8 +1,6 @@
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
-import LegoFace from '../../assets/images/images/Lego-face-imgSmall.svg';
 import Mememe from '../../assets/images/images/me-image-text.png';
-// import MeArrow from '../../assets/images/images/text-me.png';
 import GithubIcon from '../../assets/images/icons/github-icon.svg';
 import LinkedinIcon from '../../assets/images/icons/linkedin-icon.svg';
 import EmailIcon from '../../assets/images/icons/email-icon.svg';
@@ -13,14 +11,14 @@ import Portfolio from '../../assets/images/images/portfolio-img.png';
 import CampIt from '../../assets/images/images/CampIt-img.png';
 import FurnDesign from '../../assets/images/images/furn-design.png';
 import Logo from '../../assets/images/logo/logo-circle2.png';
-
-// import Pattern from '../../assets/images/images/pattern-background.svg';
 import SkillCard from '../../components/SkillCard/SkillCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import { NavHashLink } from 'react-router-hash-link';
 
 
 export default function HomePage() {
 
+    // Array of skills for the desgin card
     const designerSkills = [
         'Research',
         'Wireframing',
@@ -29,9 +27,11 @@ export default function HomePage() {
         'Miro',
         'Photoshop',
         'Illustrator',
-        '3DS Max'
+        '3DS Max',
+        'Visual Communication'
     ]
 
+    // Array of skills for the web dev card
     const webDevSkills = [
         'HTML',
         'SASS',
@@ -41,21 +41,17 @@ export default function HomePage() {
         'Axios',
         'Node.js',
         'Express',
-        'Git'
+        'Git',
+        'Postman'
     ]
 
-    // function handleMouseEnter(e) {
-    //     console.log(e.target);
-    // }
 
     return (
-        <div className='wrapper'>
+        <div className='wrapper' id='home'>
             <header className='header'>
                 <div className='header__container'>
                     <div className='header__content'>
-                        <img className='header__img' src={Mememe} alt="Cristian Arostegui's face, or not?"
-                        // onMouseEnter={handleMouseEnter}
-                        />
+                        <img className='header__img' src={Mememe} alt="Cristian Arostegui's face, or not?" />
                         <div className='header__info'>
                             <h1 className='header__info-title'>Cristian Arostegui G.</h1>
                             <p className='header__info-text'>UX designer / Web developer based in Victoria, BC, Canada</p>
@@ -76,17 +72,18 @@ export default function HomePage() {
             </header>
 
             <main className='main'>
-                <section className='main-about'>
+                <section className='main-about' id='about'>
                     <div className='main-about__intro'>
                         <h2 className='main-about__title main-titles'>// about</h2>
                         <p className='main-about__text-single'>Furniture designer turned UX designer and Web developer.</p>
-                        <p>Hola! Nice to meet you! 
-                            For over 10 years I have honed my design and attention to detail skills in the furniture design industry. In the last 3 years I have brought this experience to compliment web development and UX design. 
-                            You may not sit on a website, but just like furniture, they need to be functional, beautiful and user-friendly ;). I’ve got that covered! 
-                            When I’m not coding and designing, you can find me running around after my two kiddos, playing tennis or futbol (I have a hard time calling it soccer!) and watching movies that my partner would describe as boringly artistic. 
- </p>
+                        <p>Hola! Nice to meet you!
+                            For over 10 years I have honed my design and attention to detail skills in the furniture design industry. In the last 3 years I have brought this experience to compliment web development and UX design.
+                            You may not sit on a website, but just like furniture, they need to be functional, beautiful and user-friendly ;). I’ve got that covered!
+                            When I’m not coding and designing, you can find me running around after my two kiddos, playing tennis or futbol (I have a hard time calling it soccer!) and watching movies that my partner would describe as boringly artistic.
+                        </p>
                     </div>
                     <div className='main-about__cards'>
+                        {/* Skills card- reusable component */}
                         <SkillCard
                             image={DesignerIcon}
                             altText='pen drawing'
@@ -95,6 +92,7 @@ export default function HomePage() {
                             skillsTitle='Skills'
                             skills={designerSkills}
                         />
+                        {/* Skills card- reusable component */}
                         <SkillCard
                             image={WebDevIcon}
                             altText='code icon'
@@ -104,12 +102,12 @@ export default function HomePage() {
                             skills={webDevSkills}
                         />
                     </div>
-                    {/* <p className='main-about__link'>projects</p>  */}
                 </section>
                 <section className='main-projects' id='projects'>
                     <h2 className='main-projects__title main-titles'>// projects</h2>
                     <div className='main-projects__cards'>
-                    <div className='main-projects__cards-item'>
+                        <div className='main-projects__cards-item'>
+                            {/* Project card- reusable component */}
                             <ProjectCard
                                 name='Portfolio'
                                 description='Oh yes, I am adding my portfolio. While designing and coding this site, I enhance my knowledge on by using reusable components such as the
@@ -123,6 +121,7 @@ export default function HomePage() {
                             <img className='main-projects__cards-img' src={Portfolio} alt='Screens samples of simple meal project' />
                         </div>
                         <div className='main-projects__cards-item'>
+                            {/* Project card- reusable component */}
                             <ProjectCard
                                 name='Simple Meal'
                                 description='A recipe web app that allows users to create their own meal plans. Users can choose between 1 to 5 different 
@@ -137,6 +136,7 @@ export default function HomePage() {
                             <img className='main-projects__cards-img' src={SimpleMeal} alt='Screens samples of simple meal project' />
                         </div>
                         <div className='main-projects__cards-item'>
+                            {/* Project card- reusable component */}
                             <ProjectCard
                                 name='CampIt!'
                                 description='UX case study. Design proposal for a more user-friendly online campsite booking platform in Vancouver Island, 
@@ -151,6 +151,7 @@ export default function HomePage() {
                             <img className='main-projects__cards-img' src={CampIt} alt='Screens samples of CampIt project' />
                         </div>
                         <div className='main-projects__cards-item'>
+                            {/* Project card- reusable component */}
                             <ProjectCard
                                 name='Furniture Design'
                                 description='Before entering the world of web development and UX design, I honed my design, attention to detail and creative problem-solving skills while ensuring positive relationships with clients in the furniture design industry. This design background, now coupled with the hard coding skills, help me create functional and beautiful products. '
@@ -167,23 +168,25 @@ export default function HomePage() {
                 <section className='main-contact' id='contact'>
                     <h2 className='main-contact__title main-titles'>// contact me</h2>
                     <div className='main-contact__content'>
-                        <p className='main-contact__text'>Say hi, don't be shy! I would love to hear from you. I spent some time designing and coding this 
-                        portfolio. Let me know how I did! Feedback is always welcome! (assuming no one looking at this is a crazy mean troll of course…).
+                        <p className='main-contact__text'>Say hi, don't be shy! I would love to hear from you. I spent some time designing and coding this
+                            portfolio. Let me know how I did! Feedback is always welcome! (assuming no one looking at this is a crazy mean troll of course…).
 
                         </p>
                         <p className='main-contact__text'>
                             You can find me on any of these links below or on your right, depending if you are looking at this on a mobile phone or tablet/desktop. Thanks for looking!
-                        </p>                       
+                        </p>
                     </div>
                     <p className='main-contact__text--bottom'>
-                    If you ever  find yourself  in beautiful Victoria, BC, let me know. I’m always happy to chat about development and design 
-                    (or futbol or tennis or many other random topics) over a cup of coffee. 
+                        If you ever  find yourself  in beautiful Victoria, BC, let me know. I’m always happy to chat about development and design
+                        (or futbol or tennis or many other random topics) over a cup of coffee.
                     </p>
                 </section>
             </main>
             <footer className='footer'>
                 <div className='footer__container'>
-                    <img className='footer__logo' src={Logo} alt='Cristian Arostegui logo' />
+                    <NavHashLink to='#home'>
+                        <img className='footer__logo' src={Logo} alt='Cristian Arostegui logo' />
+                    </NavHashLink>
                     <p className='footer__content'>Designed and developed by Cristian Arostegui G // 2022</p>
                 </div>
             </footer>
