@@ -114,7 +114,7 @@ export default function HomePage() {
                                 about cards section, the projects cards and buttons section'
                                 tags='REACT / SASS / BEM  / REUSABLE COMPONENTS'
                                 text1='Demo'
-                                webAddress='/#projects'
+                                webAddress='https://cristianag-portfolio.herokuapp.com/'
                                 text2='Repository'
                                 webAddress2='https://github.com/carosteguig/cristian-arostegui-portfolio'
                             />
