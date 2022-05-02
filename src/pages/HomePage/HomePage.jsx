@@ -184,9 +184,7 @@ export default function HomePage() {
             </main>
             <footer className='footer'>
                 <div className='footer__container'>
-                    <NavHashLink to='#home'>
-                        <img className='footer__logo' src={Logo} alt='Cristian Arostegui logo' />
-                    </NavHashLink>
+                    <img className='footer__logo' src={Logo} alt='Cristian Arostegui logo' />
                     <p className='footer__content'>Designed and developed by Cristian Arostegui G // 2022</p>
                 </div>
             </footer>

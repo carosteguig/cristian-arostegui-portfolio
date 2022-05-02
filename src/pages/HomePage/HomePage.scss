@@ -357,9 +357,9 @@
   &__logo {
     margin-bottom: 1rem;
 
-    &:hover {
-      opacity: 0.8;
-    }
+    // &:hover {
+    //   opacity: 0.8;
+    // }
 
     @include tablet {
       margin-bottom: 2rem;
