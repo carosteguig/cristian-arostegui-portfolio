@@ -11,6 +11,7 @@ import WebDevIcon from '../../assets/images/icons/webDev-icon.svg';
 import SimpleMeal from '../../assets/images/images/Simple-Meal-img.png';
 import Portfolio from '../../assets/images/images/portfolio-img.png';
 import CampIt from '../../assets/images/images/CampIt-img.png';
+import FurnDesign from '../../assets/images/images/furn-design.png';
 import Logo from '../../assets/images/logo/logo-circle2.png';
 
 // import Pattern from '../../assets/images/images/pattern-background.svg';
@@ -159,7 +160,7 @@ export default function HomePage() {
                                 text2='Caramba'
                                 webAddress2='https://wp.vancouver.interiordesignshow.com/embedded/2020/05/ids-360-virtual-series-caramba-furniture/'
                             />
-                            <img className='main-projects__cards-img' src={CampIt} alt='Screens samples of CampIt project' />
+                            <img className='main-projects__cards-img' src={FurnDesign} alt='Screens samples of CampIt project' />
                         </div>
                     </div>
                 </section>
