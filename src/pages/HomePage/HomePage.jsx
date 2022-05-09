@@ -75,7 +75,7 @@ export default function HomePage() {
                 <section className='main-about' id='about'>
                     <div className='main-about__intro'>
                         <h2 className='main-about__title main-titles'>// about</h2>
-                        <p className='main-about__text-single'>Furniture designer turned UX designer and Web developer.</p>
+                        <p className='main-about__text-single'>Chilean furniture designer turned UX designer and Web developer.</p>
                         <p>Hola! Nice to meet you!
                             For over 10 years I have honed my design and attention to detail skills in the furniture design industry. In the last 3 years I have brought this experience to compliment web development and UX design.
                             You may not sit on a website, but just like furniture, they need to be functional, beautiful and user-friendly ;). I’ve got that covered!
